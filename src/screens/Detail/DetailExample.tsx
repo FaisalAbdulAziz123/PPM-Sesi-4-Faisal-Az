@@ -3,7 +3,7 @@ import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { RouteProp } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 
-type RootStackParamList = {
+type RootStackParamList = { 
     DetailExample: { 
         message: string; 
         name: string; 

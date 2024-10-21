@@ -1,12 +1,16 @@
 import { useNavigation } from "@react-navigation/native";
 import { View, Text, TextInput, Image, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
 import { NavigationProp } from '@react-navigation/native';
+import React from 'react';
 
 const product = [
     { id: '1', name: 'Cappuccino', description: 'with chocolate', image: require('../../assets/Cappucino.png'), price: '$4.50', rating: 4.8 },
-    { id: '2', name: 'Latte', description: 'with chocolate', image: require('../../assets/Latte.png'), price: '$3.80', rating: 4.9 },
+    { id: '2', name: 'Latte', description: 'with chocolate', image: require('../../assets/Latte.png'), price: 'Rp. 10.000', rating: 4.9 },
     { id: '3', name: 'Machito', description: 'with chocolate', image: require('../../assets/Torabika.png'), price: '$4.00', rating: 4.5 },
     { id: '4', name: 'Americano', description: 'with chocolate', image: require('../../assets/Americano.png'), price: '$3.00', rating: 4.8 },
+    { id: '4', name: 'Kopi Hitam', description: 'with original', image: require('../../assets/kopiItem.jpeg'), price: '$3.00', rating: 4.8 },
+    { id: '4', name: 'Coffe Milk', description: 'with milk', image: require('../../assets/kopi6.jpeg'), price: '$3.00', rating: 4.8 },
+
 ];
 
 type RootStackParamList = {
@@ -44,7 +48,7 @@ const Coffee = () => {
                         <Text style={styles.locationText}>Location</Text>
                         <Text style={styles.location}>Sukabumi, Indonesia</Text>
                     </View>
-                    <Image source={require("../../assets/sip.jpg")} style={styles.avatar} />
+                    <Image source={require("../../assets/Faisal.jpg")} style={styles.avatar} />
                 </View>
 
                 <View style={styles.searchContainer}>
@@ -134,7 +138,7 @@ const styles = StyleSheet.create({
         width: 351,
         height: 52,
         borderWidth: 1,
-        borderColor: '#DDDDDD',
+        borderColor: 'red',
         backgroundColor: "white",
     },
     bannerContainer: {
@@ -228,7 +232,7 @@ const styles = StyleSheet.create({
         color: "#333",
     },
     iconPlus: {
-        marginHorizontal: 100,
+        marginHorizontal: 125,
         marginTop: -30,
         width: 35,
         height: 35,

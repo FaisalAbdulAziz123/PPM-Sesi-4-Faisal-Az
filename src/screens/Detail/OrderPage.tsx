@@ -50,9 +50,9 @@ const OrderPage = () => {
             </View>
 
             <View style={styles.addressContainer}>
-                <Text style={styles.addressLabel}>Delivery Address</Text>
-                <Text style={styles.address}>Jl. Kpg Sutoyo</Text>
-                <Text style={styles.subAddress}>Kpg. Sutoyo No. 620, Bilzen, Tanjungbalai.</Text>
+                <Text style={styles.addressLabel}>Alamat Delivery</Text>
+                <Text style={styles.address}>Faisal Abdul Aziz</Text>
+                <Text style={styles.subAddress}>kp. Cikaroya Desa. Gunung Jaya rt/rw 16/03</Text>
                 <View style={styles.addressButtonsContainer}>
                     <TouchableOpacity style={styles.addressButton}>
                         <Image source={require("../../assets/edit.png")} style={styles.smallIcon} />
@@ -74,7 +74,7 @@ const OrderPage = () => {
                 <View style={styles.quantityContainer}>
                     <TouchableOpacity onPress={handleDecrement} style={styles.quantityButton}>
                         <Text style={styles.quantityButtonText}>-</Text>
-                    </TouchableOpacity>
+                    </TouchableOpacity>   
                     <Text style={styles.quantityText}>{quantity}</Text>
                     <TouchableOpacity onPress={handleIncrement} style={styles.quantityButton}>
                         <Text style={styles.quantityButtonText}>+</Text>
@@ -89,25 +89,25 @@ const OrderPage = () => {
             </View>
 
             <View style={styles.paymentSummary}>
-                <Text style={styles.paymentTitle}>Payment Summary</Text>
+                <Text style={styles.paymentTitle}>Ringkasan Pembayaran:</Text>
                 <View style={styles.paymentRow}>
-                    <Text style={styles.paymentLabel}>Price</Text>
+                    <Text style={styles.paymentLabel}>Harga</Text>
                     <Text style={styles.paymentValue}>{price}</Text>
                 </View>
                 <View style={styles.paymentRow}>
-                    <Text style={styles.paymentLabel}>Delivery Fee</Text>
-                    <Text style={styles.paymentValue}>$ 1.0</Text>
+                    <Text style={styles.paymentLabel}>Biaya Pengiriman</Text>
+                    <Text style={styles.paymentValue}>Rp. 5.000</Text>
                 </View>
                 <View style={styles.paymentRow}>
-                    <Text style={styles.paymentLabel}>Total Payment</Text>
-                    <Text style={styles.paymentTotal}>$ 5.53</Text>
+                    <Text style={styles.paymentLabel}>Total Pembayaran</Text>
+                    <Text style={styles.paymentTotal}>Rp. 15.000</Text>
                 </View>
             </View>
 
             <View style={styles.paymentMethodContainer}>
                 <Image source={require("../../assets/moneys.png")} style={styles.paymentIcon} />
                 <Text style={styles.paymentMethodText}>Cash</Text>
-                <Text style={styles.paymentMethodAmount}>$ 5.53</Text>
+                <Text style={styles.paymentMethodAmount}>15.000</Text>
                 <Image source={require("../../assets/dots.png")} style={styles.dotsIcon} />
             </View>
 
@@ -116,14 +116,14 @@ const OrderPage = () => {
             </TouchableOpacity>
         </View>
     );
-};
+}; 
 
-export default OrderPage;
+export default OrderPage;  
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: 'white',
         padding: 20,
     },
     header: {
@@ -192,12 +192,12 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         marginTop: 7,
     },
-    addressButton: {
+    addressButton: { 
         borderColor: '#DEDEDE',
         borderWidth: 1,
         padding: 8,
         borderRadius: 16,
-        flexDirection: 'row',
+        flexDirection: 'row',   
     },
     smallIcon: {
         width: 15,
@@ -209,7 +209,7 @@ const styles = StyleSheet.create({
         marginTop:-2
     },
     productContainer: {
-        flexDirection: 'row',
+        flexDirection: 'row', 
         alignItems: 'center',
         marginBottom: 20,
     },

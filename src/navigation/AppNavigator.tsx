@@ -11,6 +11,8 @@ import DetailPage from '../screens/Detail/DetailExample';
 
 const Stack = createNativeStackNavigator();
 
+
+
 const AppNavigator = () => {
   return (
     <NavigationContainer>
@@ -27,6 +29,7 @@ const AppNavigator = () => {
         <Stack.Screen name="DetailExample" component={DetailPage} options={{
           headerShown: false
         }}/>
+        
         <Stack.Screen name="OrderPage" component={OrderPage} options={{
           headerShown: false
         }}/>
